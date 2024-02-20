@@ -1,6 +1,7 @@
-import system
+from system import SystemStub
 import passwor
-import bf 
+from bf import read_lines
+
 
 """
  Генерация файла passwords.txt с помощью функции generate_passwords_file
@@ -22,4 +23,13 @@ for i in range(1, 100):
 
 
 def do_bruteforce():
-    read_lines()
+    reader_generator = read_lines(filename='passwords.txt')
+    authen = SystemStub(passsword = next(reader_generator))
+    if authen.auth == 'PASSWORD IS NOT VALID' or '!!! TRUE PASSWORD IS NOT VALID !!!':
+        authen.password = next(reader_generator)
+    elif:
+        print("success authentification!")
+
+
+        
+        
