@@ -9,18 +9,21 @@ class SystemStub:
         self.password = ''
  
     def auth(self, password: str):
+      
         is_password_blank = self.password == ''
         if is_password_blank:
             random_value = random.randrange(1, 10)
             is_winning_condition = random_value == 7
             if is_winning_condition:
                 self.password = password
-                return 'SUCCESS'
+                print(self.password)
+                return "SUCCESS"
             else:
                 return 'PASSWORD IS NOT VALID'
         else:
             is_same_password = password == self.password
             if is_same_password:
                 return '!!! SUCCESS !!!'
+
             else:
                 return '!!! TRUE PASSWORD IS NOT VALID !!!'
