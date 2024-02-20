@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from system import SystemStub
+=======
+import stubs
+>>>>>>> 38bc128 (s)
 import passwor
 from bf import read_lines
 
@@ -16,12 +20,13 @@ from bf import read_lines
 
 
 passwor.generate_passwords_file()
-s = system.SystemStub()
+s = stubs.SystemStub()
 for i in range(1, 100):
     message = s.auth(i)
     print(message) 
 
 
+<<<<<<< HEAD
 def do_bruteforce():
     reader_generator = read_lines(filename='passwords.txt')
     authen = SystemStub(passsword = next(reader_generator))
@@ -33,3 +38,5 @@ def do_bruteforce():
 
         
         
+=======
+>>>>>>> 38bc128 (s)

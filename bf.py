@@ -6,3 +6,7 @@ def read_lines(filename: str):
             yield content
 def do_bruteforce():
     print("Hello world")
+
+def test_func():
+    print("test")
+    
