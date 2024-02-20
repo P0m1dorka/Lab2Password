@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-from system import SystemStub
-=======
-import stubs
->>>>>>> 38bc128 (s)
-import passwor
-from bf import read_lines
+from stubs import SystemStub
 
 
 """
@@ -18,25 +12,11 @@ from bf import read_lines
 """
 
 
-
-passwor.generate_passwords_file()
-s = stubs.SystemStub()
+s = SystemStub()
 for i in range(1, 100):
     message = s.auth(i)
-    print(message) 
+    print(message)
 
 
-<<<<<<< HEAD
-def do_bruteforce():
-    reader_generator = read_lines(filename='passwords.txt')
-    authen = SystemStub(passsword = next(reader_generator))
-    if authen.auth == 'PASSWORD IS NOT VALID' or '!!! TRUE PASSWORD IS NOT VALID !!!':
-        authen.password = next(reader_generator)
-    elif:
-        print("success authentification!")
 
 
-        
-        
-=======
->>>>>>> 38bc128 (s)

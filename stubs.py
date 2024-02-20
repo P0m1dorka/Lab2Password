@@ -15,12 +15,13 @@ class SystemStub:
             is_winning_condition = random_value == 7
             if is_winning_condition:
                 self.password = password
-                return 'SUCCESS'
+                return "SUCCESS"
             else:
                 return 'PASSWORD IS NOT VALID'
         else:
             is_same_password = password == self.password
             if is_same_password:
                 return '!!! SUCCESS !!!'
+
             else:
                 return '!!! TRUE PASSWORD IS NOT VALID !!!'
