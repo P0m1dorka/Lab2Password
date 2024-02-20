@@ -1,6 +1,5 @@
 
 
-
 def read_lines(filename: str):
     with open(file=filename, mode='r') as file:
          while content := file.readline():
