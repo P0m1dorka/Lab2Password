@@ -1,5 +1,6 @@
 import system
 import passwor
+import bf 
 
 """
  Генерация файла passwords.txt с помощью функции generate_passwords_file
@@ -17,4 +18,8 @@ passwor.generate_passwords_file()
 s = system.SystemStub()
 for i in range(1, 100):
     message = s.auth(i)
-    print(message)
+    print(message) 
+
+
+def do_bruteforce():
+    read_lines()
