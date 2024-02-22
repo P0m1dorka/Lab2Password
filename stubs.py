@@ -16,8 +16,7 @@ class SystemStub:
             is_winning_condition = random_value == 7
             if is_winning_condition:
                 self.password = password
-                print(self.password)
-                return "SUCCESS"
+                return 'SUCCESS'
             else:
                 return 'PASSWORD IS NOT VALID'
         else:

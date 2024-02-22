@@ -12,10 +12,7 @@ import bf
 
 """
 password.generate_passwords_file()
-reader_generator= bf.read_file('passwords.txt')
-a1 = next(reader_generator)
-a2 = a1.rstrip('\n')
-## нужно очистить пустую строчку после пароля, который мы получаем при чтении Д
+##reader_generator= bf.read_file('passwords.txt')
 
 
 s = SystemStub()
